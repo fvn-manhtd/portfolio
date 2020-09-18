@@ -1,6 +1,6 @@
 
 .mouse-scroll-top{
-    @include position("fixed", n, n, 30px, calc(50% - 17px));
+    @include position("fixed", n, n, 30px, calc(50% - 40px));
     color: $color-white;
     text-align: center;
     font-size: pxtorem(12px);
@@ -26,7 +26,10 @@
         .screen-1-inner{
             
             #light-bulb-svg {
-                @include position("fixed", 50px, n, n, calc(100% - 160px));
+                @include position("fixed", 30px, n, n, calc(100% - 80px));
+                @include mq(medium) {
+                    @include position("fixed", 50px, n, n, calc(100% - 160px));
+                }
                 width: 80px;
                 height: 80px;
                 margin: 0;
@@ -50,6 +53,10 @@
                 fill: $color-black;
             }
         }
+        display: none;
+        @include mq(medium) {
+            display: block;
+        }
     }
     
 }
@@ -62,7 +69,10 @@
     // @include position("fixed", 0, n, n, 0);
     overflow-y: scroll;
     .logo{
-        @include position("fixed", 60px, n, n, 60px);
+        @include position("fixed", 30px, n, n, 30px);
+        @include mq(medium) {
+            @include position("fixed", 60px, n, n, 60px);
+        }
     } 
     .screen-1-inner{
         height: 3000px;
@@ -84,10 +94,11 @@
     border: 1px solid $color-black;
     padding: 20px;
     border-radius: 16px;
-    margin: 0 auto;
+    margin: 0 20px;
     background-color: $color-white;
     @include mq(medium) {
         width: 750px;
+        margin: 0 auto;
     }
     .me-name{
         color: $color-gray7;
