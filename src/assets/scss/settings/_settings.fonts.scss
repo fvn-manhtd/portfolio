@@ -1,0 +1,16 @@
+// -------------------------------------
+// Fonts
+// -------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+$fontstack-main: (
+  'Space Mono', 
+  monospace,
+  system-ui,
+  "Segoe UI",
+  "Open Sans",
+  "Roboto",
+  "Helvetica",
+  "Arial",
+  sans-serif
+);
+$fontstack-alt: ("Georgia", "Times", serif);

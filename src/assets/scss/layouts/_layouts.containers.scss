@@ -1,0 +1,23 @@
+// -------------------------------------
+// Containers
+// -------------------------------------
+
+/**
+ * Centered and have max-width + padding
+*/
+
+.l-container {
+  margin: 0 auto;
+  background-color: $color-black;
+  @include mq(medium) {
+  }
+  &.light-on{
+    background-color: $color-white;
+    @include prefix(transition, all 4s ease);
+  }
+}
+.l-max-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}

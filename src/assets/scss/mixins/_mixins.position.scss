@@ -1,0 +1,13 @@
+@mixin position($def, $t: auto, $r: auto, $b: auto, $l: auto){
+  @if $def == absolute {
+      position: absolute;
+  } @else if $def == fixed {
+      position: fixed;
+  } @else {
+      position: relative;
+  }
+  @if $t != auto and $t != n { top: $t; }
+  @if $r != auto and $r != n { right: $r };
+  @if $b != auto and $b != n { bottom: $b };
+  @if $l != auto and $l != n { left: $l };
+}
