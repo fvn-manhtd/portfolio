@@ -68,6 +68,8 @@
     height: 100vh;
     // @include position("fixed", 0, n, n, 0);
     overflow-y: scroll;
+    position: relative;
+    z-index: 10;
     .logo{
         @include position("fixed", 30px, n, n, 30px);
         @include mq(medium) {
@@ -76,6 +78,7 @@
     } 
     .screen-1-inner{
         height: 3000px;
+        overflow: hidden;
         @include prefix(transition, all 2s ease);
         #light-bulb-svg {
             @include position("fixed", 50%, n, n, 50%);
@@ -83,7 +86,7 @@
             height: 200px;
             margin: -100px 0 0 -100px;
             @include prefix(transition, all 2s ease);
-            cursor: pointer;
+            z-index: 0;
         }
     }
 
