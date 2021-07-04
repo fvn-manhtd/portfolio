@@ -1,4 +1,13 @@
-
+.line-me{
+    @include position("fixed", n, 0, 0, n);
+    text-align: center;
+    background-color: $color-white;
+    z-index: 100;
+    
+    p{
+        margin: 0;
+    }
+}
 .mouse-scroll-top{
     @include position("fixed", n, n, 30px, calc(50% - 40px));
     color: $color-white;

@@ -35,5 +35,9 @@
   },
   "dependencies": {
     "gulp-notify": "^3.2.0"
+  },
+  "scripts": {
+    "prod": "gulp default",
+    "dev": "gulp watch"    
   }
 }
